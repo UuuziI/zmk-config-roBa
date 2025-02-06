@@ -73,7 +73,7 @@
 &kp TAB             &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp LEFT_CONTROL      &kp BACKSPACE   &mt LEFT_SHIFT ENTER                             &mo 5
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         FUNCTION {
@@ -94,6 +94,8 @@
 &mt EXCLAMATION KP_NUMBER_0  &kp QUESTION   &kp SEMICOLON      &kp COLON         &kp LS(MINUS)      &trans                       &trans   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
 &trans                       &trans         &trans             &trans            &trans             &trans                       &kp DEL  &kp NUMBER_0                                            &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LS(PG_UP) LS(PG_DN)>;
         };
 
         ARROW {

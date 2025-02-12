@@ -68,7 +68,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W         &kp E         &kp R           &kp T                                            &kp Y                 &kp U  &lt 5 I    &kp O    &kp P
-&lt_to_layer_0 2 A  &kp S         &kp D         &lt 4 F         &kp G      &mo 6                 &kp MINUS       &kp H                 &kp J  &kp K      &kp L    &lt_to_layer_0 2 MINUS
+&lt_to_layer_0 2 A  &kp S         &kp D         &lt 4 F         &kp G      &mo 6                 &kp ESCAPE      &kp H                 &kp J  &kp K      &kp L    &lt_to_layer_0 2 MINUS
 &lt_to_layer_0 1 Z  &kp X         &kp C         &kp V           &kp B      &kp LANG2             &kp LANGUAGE_1  &kp N                 &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 1 SLASH
 &kp TAB             &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp LEFT_CONTROL      &kp BACKSPACE   &mt LEFT_SHIFT ENTER                             &mo 5
             >;
@@ -81,7 +81,7 @@
 &kp ESCAPE  &kp F7   &kp F8  &kp F9  &kp LA(F4)                                  &kp PG_UP         &kp HOME  &kp UP_ARROW  &kp END    &kp PG_DN
 &kp F11     &kp F4   &kp F5  &kp F6  &kp LG(LEFT_ARROW)  &trans      &trans      &kp LG(UP_ARROW)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp DEL
 &kp F10     &kp F12  &kp F2  &kp F3  &kp LG(RIGHT)       &trans      &trans      &kp LG(DOWN)      &trans    &trans        &trans     &kp RSHIFT
-&trans      &trans   &trans  &trans  &trans              &trans      &kp DELETE  &trans                                               &trans
+&trans      &trans   &trans  &trans  &trans              &trans      &kp DELETE  &kp RIGHT_SHIFT                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PG_UP) LS(PG_DN)>;
@@ -112,7 +112,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &mo 4   &trans  &mkp MB3      &trans  &trans  &mkp MB1  &kp K   &mkp MB2  &trans
+&trans  &trans  &trans  &mo 4   &trans  &mkp MB3      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans                              &trans
             >;

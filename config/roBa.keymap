@@ -17,8 +17,8 @@
         compatible = "zmk,combos";
 
         tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            bindings = <&mkp MB3>;
+            key-positions = <31 32>;
         };
 
         shift_tab {
@@ -29,16 +29,6 @@
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
     };
 
@@ -68,7 +58,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R           &kp T                                       &kp Y                 &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_SHIFT A  &kp S         &kp D         &lt 4 F         &kp G        &mo 6          &kp ESCAPE      &kp H                 &kp J  &kp K      &kp L    &kp MINUS
+&kp A             &kp S         &kp D         &lt 4 F         &kp G        &mo 6          &kp ESCAPE      &kp H                 &kp J  &kp K      &kp L    &kp MINUS
 &kp Z             &kp X         &kp C         &kp V           &kp B        &kp LANG2      &kp LANGUAGE_1  &kp N                 &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 TAB      &kp BACKSPACE   &mt LEFT_SHIFT ENTER                             &mo 5
             >;
@@ -89,10 +79,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE                   &kp BACKSLASH  &kp LS(BACKSLASH)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                        &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp EQUAL
-&kp LEFT_SHIFT               &kp RBKT       &kp LS(N9)         &kp LS(N0)        &kp LS(GRAVE)      &kp LC(LA(KP_NUMBER_0))      &trans   &kp COMMA     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&mt EXCLAMATION KP_NUMBER_0  &kp QUESTION   &kp SEMICOLON      &kp COLON         &kp LS(MINUS)      &trans                       &trans   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&trans                       &trans         &trans             &trans            &trans             &trans                       &kp DEL  &kp NUMBER_0                                            &trans
+&kp LS(NON_US_BACKSLASH)  &kp BACKSLASH  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                        &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp EQUAL
+&kp LEFT_SHIFT            &kp RBKT       &kp LS(N9)        &kp LS(N0)        &kp LS(GRAVE)      &kp LC(LA(KP_NUMBER_0))      &trans   &kp COMMA     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&trans                    &kp QUESTION   &kp SEMICOLON     &kp COLON         &kp LS(MINUS)      &trans                       &trans   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&trans                    &trans         &trans            &trans            &trans             &trans                       &kp DEL  &kp NUMBER_0                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PG_UP) LS(PG_DN)>;
@@ -111,9 +101,9 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &mo 4   &trans  &mkp MB3      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &mo 4   &trans  &mkp MB3      &trans  &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans                              &trans
             >;
         };

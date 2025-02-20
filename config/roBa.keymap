@@ -79,10 +79,10 @@
 
         NUM {
             bindings = <
-&kp LS(NON_US_BACKSLASH)  &kp BACKSLASH  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                        &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp EQUAL
-&kp LEFT_SHIFT            &kp RBKT       &kp LS(N9)        &kp LS(N0)        &kp LS(GRAVE)      &kp LC(LA(KP_NUMBER_0))      &trans   &kp COMMA     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&trans                    &kp QUESTION   &kp SEMICOLON     &kp COLON         &kp LS(MINUS)      &trans                       &trans   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&trans                    &trans         &trans            &trans            &trans             &trans                       &kp DEL  &kp NUMBER_0                                            &trans
+&kp LS(NON_US_BACKSLASH)  &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES                                        &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp EQUAL
+&kp LEFT_SHIFT            &kp SQT        &kp LS(N9)        &kp LS(N0)         &kp LS(GRAVE)      &kp LC(LA(KP_NUMBER_0))      &trans   &kp COMMA     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp EXCLAMATION           &kp QUESTION   &kp SEMICOLON     &kp COLON          &kp LS(MINUS)      &trans                       &trans   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&trans                    &trans         &trans            &trans             &trans             &trans                       &kp DEL  &kp NUMBER_0                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PG_UP) LS(PG_DN)>;

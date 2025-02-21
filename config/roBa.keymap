@@ -16,19 +16,34 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&mkp MB3>;
-            key-positions = <31 32>;
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <39 22>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <23 39>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <24 39>;
+        };
+
+        past {
+            bindings = <&kp LC(V)>;
+            key-positions = <39 25>;
+        };
+
+        all {
+            bindings = <&kp LC(A)>;
+            key-positions = <39 10>;
+        };
+
+        redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <39 5>;
         };
     };
 

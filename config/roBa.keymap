@@ -30,6 +30,16 @@
             bindings = <&mkp MB3>;
             key-positions = <18 19 20>;
         };
+
+        L_boot {
+            bindings = <&bootloader>;
+            key-positions = <0 10>;
+        };
+
+        R_boot {
+            bindings = <&bootloader>;
+            key-positions = <9 21>;
+        };
     };
 
     macros {
